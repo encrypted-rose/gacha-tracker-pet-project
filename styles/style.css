@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jersey+10&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+
+h1 a:hover{
+    color: darkslateblue;
+}
+
+p{
+    margin: 0;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+}
+
+#game-files{
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    justify-items: center;
+    font-family: "DM Mono", monospace;
+    font-size: 15px;
+    gap: 20px;
+}
+
+#game-files h2{
+    margin: 0;
+    font-family: "DM Mono", monospace;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#game-files h3{
+    margin: 0;
+    font-family: "DM Mono", monospace;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+img {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.game-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.timer{
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 2px;
+    margin-top: 5px;
+    width: 200px;
+    height: 20px;
+}
+
+#to-fill{
+    display: none;
+}
+
+#fill-out-form{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 350px;
+    height: auto;
+    border: solid 1px black;
+    border-radius: 10px;
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+}
+
+#submit-button{
+    margin-top: 10px;
+}
+
+.input-area{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#clock{
+    padding-top: 10px;
+}
+#time-request{
+    text-align: center;
+    border: solid 1px gray;
+    border-radius: 2px;
+    height: 20px;
+    width: auto;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    text-align: center;
+    font-family: "DM Mono", monospace;
+    font-size: 0.6em;
+    font-weight: 500;
+}

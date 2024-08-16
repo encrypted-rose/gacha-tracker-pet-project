@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+    <title>Gacha Tracker</title>
+</head>
+<body>
+    <header id="header">
+        <h1 id="reset"><a href="#">Gacha Tracker</a></h1>
+    </header>
+
+    <main>
+
+        <div id="game-files">
+
+            <!--HARD CODED GAMES-->
+
+            <!--game 1-->
+            <div class="game-card">
+                <h2 class="title">Honkai Star Rail</h2>
+                <div class="icon">
+                    <img src="./images/hsr.png" alt="">
+                </div>
+                <h3>Resource</h3>
+                <p class="resources">Trailblazer Power</p>
+                <h3>Time until refresh</h3>
+                <div>
+                    <p class="timer">
+                        <span id="hours-1"></span>
+                        <span id="min-1"></span>
+                        <span id="sec-1"></span>
+                    </p>
+                    <p>
+                        <span id="todayDate-1"></span>
+                    </p>
+                </div>
+                <button class="stop">Stop</button>
+            </div>
+        
+            <!--game 2-->
+            <div class="game-card">
+                <h2 class="title">Arknights</h2>
+                <div class="icon">
+                    <img src="./images/arknights.png" alt="">
+                </div>
+                <h3>Resource</h3>
+                <p class="resources">Sanity</p>
+                <h3>Time until refresh</h3>
+                <div>
+                    <p class="timer">
+                        <span id="hours-2"></span>
+                        <span id="min-2"></span>
+                        <span id="sec-2"></span>
+                    </p>
+                    <p>
+                        <span id="todayDate-2"></span>
+                    </p>
+                </div>
+                <button class="stop">Stop</button>
+            </div>
+            
+            <!--Empty div to imput form information-->
+
+            <div class="game-card" id="to-fill">
+                <h2><span id="title-fill"></span></h2>
+                <div class="icon">
+                    <span></span>
+                </div>
+                <h3>Resource</h3>
+                <p><span id="resource-fill"></span></p>
+                <h3>Time until refresh</h3>
+                <div>
+                    <p id="timer-fill">
+                        <span id="hours-3"></span>
+                        <span id="min-3"></span>
+                        <span id="sec-3"></span>
+                    </p>
+                </div>
+                <button class="stop">Stop</button>
+            </div>
+        </div>
+    
+        <!--FORM-->
+        <div id="fill-out-form">
+            <form action="#" method="post" id="gameForm" name="form_game">
+                <div class="input-area">
+                    <label for="gameTitle">Game Title</label>
+                    <input type="text" name="gameTitle" id="gameTitle">
+                </div>
+
+                <div class="input-area">
+                    <label for="resource">Resource name</label>
+                    <input type="text" name="resource" id="resource">
+                </div>
+
+                <div class="input-area">
+                    <label for="time">Time until you can play</label>
+                    <input type="time" name="time" id="time">
+                    <!--<button id="get-time">Get time</button>-->
+
+                <p>
+                    <input type="submit" name="submit" id="submit-button" value="Submit!">
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>Developed and Designed by Rose S.© 2024 All rights reserved</div>
+    </footer>
+</body>
+</html>
